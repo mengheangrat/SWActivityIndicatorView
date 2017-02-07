@@ -20,7 +20,7 @@ private let SWSpinningAnimationKey = "Rotation"
     @IBInspectable open var autoStartAnimating: Bool = false {
         didSet {
             if autoStartAnimating && self.superview != nil {
-               self.animate(true)
+                self.animate(true)
             }
         }
     }
@@ -41,7 +41,7 @@ private let SWSpinningAnimationKey = "Rotation"
         super.init(frame: frame)
         configure()
     }
-
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
@@ -134,7 +134,7 @@ private let SWSpinningAnimationKey = "Rotation"
         circleFrame = circleFrame.insetBy(dx: inset, dy: inset)
         
         return circleFrame
-
+        
     }
     
     fileprivate func circlePath() -> UIBezierPath {
@@ -148,7 +148,7 @@ private let SWSpinningAnimationKey = "Rotation"
         circlePathLayer.strokeColor = self.color.cgColor
         circlePathLayer.strokeEnd = 0.9
         layer.addSublayer(circlePathLayer)
-        backgroundColor = UIColor.white        
+        backgroundColor = UIColor.white
     }
     
     
